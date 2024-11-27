@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estética & Costura</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio" class="header">
+    <h1>Estética & Costura</h1>
+    <p>Costura y embellecimiento</p>
+  </header>
+
+  <section id="servicios" class="services">
+    <div class="services-container">
+      <div class="service-card" onclick="showServiceModal('pelo')">
+        <i class="fas fa-cut"></i>
+        <h3>Recorte y personalización de pelo</h3>
+        <p>Servicios profesionales para tu cabello</p>
+      </div>
+      <div class="service-card" onclick="showServiceModal('costura')">
+        <i class="fas fa-tshirt"></i>
+        <h3>Reparación, ajuste y parchado</h3>
+        <p>Servicios de costura profesional</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal para servicios -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('serviceModal')">&times;</span>
+      <div id="serviceDetails"></div>
+    </div>
+  </div>
+
+  <!-- Modal para citas -->
+  <div id="appointmentModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('appointmentModal')">&times;</span>
+      <div id="appointmentDetails">
+        <h2>Agendar Cita</h2>
+        <div class="calendar">
+          <div class="calendar-header">
+            <button onclick="previousMonth()">&lt;</button>
+            <h3 id="currentMonth"></h3>
+            <button onclick="nextMonth()">&gt;</button>
+          </div>
+          <div class="calendar-grid" id="calendarDays"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="galeria" class="gallery">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="/api/placeholder/400/400" alt="Trabajo 1">
+      </div>
+      <div class="gallery-item">
+        <img src="/api/placeholder/400/400" alt="Trabajo 2">
+      </div>
+      <div class="gallery-item">
+        <img src="/api/placeholder/400/400" alt="Trabajo 3">
+      </div>
+      <div class="gallery-item">
+        <img src="/api/placeholder/400/400" alt="Trabajo 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-nosotros" class="about">
+    <div class="about-content">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos un equipo dedicado a brindar servicios de alta calidad en estética y costura. Nuestra pasión es hacer que nuestros clientes se vean y se sientan mejor.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Dirección: Calle Principal #123, Ciudad</p>
+    <p>© Todos los derechos reservados - Estética & Costura</p>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

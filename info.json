@@ -1,0 +1,29 @@
+{
+  "services": {
+    "pelo": {
+      "title": "Servicios de Pelo",
+      "subservices": [
+        { "name": "Corte de pelo personalizado", "price": 200 },
+        { "name": "Rizar pelo", "price": 300 },
+        { "name": "Alisar pelo", "price": 400 },
+        { "name": "Enchinar pelo", "price": 250 },
+        { "name": "Pintar el pelo", "price": 500 }
+      ]
+    },
+    "costura": {
+      "title": "Servicios de Costura",
+      "subservices": [
+        { "name": "Coser prendas", "price": 150 },
+        { "name": "Ajuste a medida", "price": 200 },
+        { "name": "Parchar pantalones", "price": 100 },
+        { "name": "Creación de prendas", "price": 500 }
+      ]
+    }
+  },
+  "fechasDisponibles": {
+    "27/11/2024": null,
+    "28/11/2024": "ocupado",
+    "29/11/2024": null,
+    "30/11/2024": "ocupado"
+  }
+}
